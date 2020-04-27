@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutRootId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:launchMode="singleInstance"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/about_image_id"
+        android:layout_width="386dp"
+        android:layout_height="278dp"
+        android:contentDescription="@string/app_name"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/about_webview_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <WebView
+        android:id="@+id/about_webview_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_image_id"
+        app:layout_constraintVertical_bias="0.142" />
+</android.support.constraint.ConstraintLayout>

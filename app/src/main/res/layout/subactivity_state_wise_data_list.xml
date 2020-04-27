@@ -1,0 +1,71 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/subactivity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/stateNameId"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/comicneuebold"
+                android:gravity="start|center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/confirmedCasesState"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/confirmedCasesState"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#90FFEA00"
+                android:fontFamily="@font/comicneueregular"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/statewise_recovered_id"
+                app:layout_constraintStart_toEndOf="@+id/stateNameId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/statewise_recovered_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#6176FF03"
+                android:fontFamily="@font/comicneueregular"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/statewise_death_id"
+                app:layout_constraintStart_toEndOf="@+id/confirmedCasesState"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/statewise_death_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#67FF3D00"
+                android:fontFamily="@font/comicneueregular"
+                android:gravity="center_horizontal|center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/statewise_recovered_id"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

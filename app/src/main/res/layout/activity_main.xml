@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutRootId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:launchMode="singleInstance"
+    android:orientation="vertical"
+    android:scrollbars="horizontal|vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="582dp"
+        android:background="#FF9100"
+        android:fontFamily="@font/goturegular"
+        android:gravity="center|center_horizontal"
+        android:text="@string/page_title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/deaths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/cases"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#EEFF41"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/stateWiseData"
+        app:layout_constraintEnd_toStartOf="@+id/discharged"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/discharged"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#B2FF59"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/stateWiseData"
+        app:layout_constraintEnd_toStartOf="@+id/deaths"
+        app:layout_constraintStart_toEndOf="@+id/cases"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/deaths"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#BFFF0000"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/discharged"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/discharged"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="RtlCompat" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/stateWiseData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discharged">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/refreshedOn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF9100"
+        android:fontFamily="@font/comicneueregular"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:padding="5dp"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateWiseData"
+        app:layout_constraintVertical_bias="0.944" />
+
+</android.support.constraint.ConstraintLayout>

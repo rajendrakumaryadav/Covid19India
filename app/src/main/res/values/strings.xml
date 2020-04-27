@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Covid19 India</string>
+    <string name="page_title">COVID 19 India -  </string>
+
+    <string name="refresh_data_button_label" translatable="false">Refresh Data</string>
+    <string name="editbox_hint" translatable="false">State-wise Covid Patient Data</string>
+    <string name="refreshed_on_label" translatable="false">Refreshed On</string>
+    <string name="totalcases_label" translatable="false">Cases : </string>
+    <string name="discharged_label" translatable="false">Discharged : </string>
+    <string name="deaths_label" translatable="false">Deaths : </string>
+
+    <string name="menu_home_label" translatable="false">Home</string>
+
+    <string name="menu_refresh_data_label" translatable="false">Refresh Data</string>
+    <string name="menu_about_label" translatable="false">About</string>
+    <string name="menu_beds_availability_label" translatable="false">
+        Beds Availability</string>
+    <string name="menu_quit_label" translatable="false">
+        Quit
+    </string>
+
+    <string name="toast_message_refreshing" translatable="false">Refreshing data...</string>
+    <string name="menu_menubutton_data_label">menu</string>
+</resources>
