@@ -14,7 +14,7 @@ public class Config {
     private final String OFFICIAL_NOTIFICATION_BY_ICMR =
         "https://api.rootnet.in/covid19-in/notifications";
     private final String DEVELOPERS_WEBSITE =
-        "https://www.dreamsdoor.co.in";
+        "https://github.com/rajendrakumaryadav/";
 
     public String getCASE_COUNT_STATE_WISE() {
         return CASE_COUNT_STATE_WISE;
